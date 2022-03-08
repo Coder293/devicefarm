@@ -9,8 +9,7 @@ phases:
 
   build:
     commands:
-      - git clone https://github.com/Coder293/devicefarm.git
-      - git log
+      - aws codepipeline get-job-details
  
 
 
