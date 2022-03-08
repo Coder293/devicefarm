@@ -1,0 +1,29 @@
+version: 0.2
+
+phases:
+  install:
+    commands:
+
+  pre_build:
+    commands:
+
+  build:
+    commands:
+      - echo "COMPILE"
+      - mvn compile
+      - echo "INSTALL"
+      - mvn install
+      - echo "DEPLOY"
+      - export CODEARTIFACT_TOKEN=`aws codeartifact get-authorization-token --domain mvn-dom --query authorizationToken --output text`
+      - echo "DEPLOY not working so far"
+      - aws codebuild start-build --project-name runbuild
+ 
+
+
+artifacts:
+  files:
+    - "**/*"
+  name: myname-$AWS_REGION 
+
+
+
