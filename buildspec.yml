@@ -9,7 +9,7 @@ phases:
 
   build:
     commands:
-      - aws codepipeline get-job-details
+      - aws codepipeline get-job-details --job-id this
  
 
 
