@@ -9,8 +9,7 @@ phases:
 
   build:
     commands:
-      - aws codepipeline get-job-details --job-id this
- 
+      - aws codepipeline get-pipeline-state --name gui-test
 
 
 artifacts:
