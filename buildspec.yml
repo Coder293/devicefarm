@@ -9,7 +9,7 @@ phases:
 
   build:
     commands:
-      - git log
+      - aws codepipeline list-action-executions --name gui-test
 
 artifacts:
   files:
