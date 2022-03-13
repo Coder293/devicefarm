@@ -10,12 +10,11 @@ phases:
   build:
     commands:
       - echo $Message
-      - echo "..."
+      - chmod +x suitexecute.sh
+      - ./suitexecute.sh
 
 artifacts:
   files:
     - "**/*"
   name: myname-$AWS_REGION 
-
-
 
