@@ -1,4 +1,4 @@
-t#!/bin/bash
+#!/bin/bash
 
 if [ $Message == 'rente' ]
 then
