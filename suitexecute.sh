@@ -1,9 +1,10 @@
-#!/bin/bash
+t#!/bin/bash
 
-if [ $Message == 'risiko' ]
+if [ $Message == 'rente' ]
 then
-java -jar s3://renten-vers/df-run.jar
+echo "rente"
+java -jar s3://renten-vers/testsuits/df-run.jar
 else
-echo "rentenvers"
+echo "risk"
 fi
 
